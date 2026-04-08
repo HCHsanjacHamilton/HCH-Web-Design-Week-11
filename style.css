@@ -1,0 +1,97 @@
+h1 {
+  color: #85ddff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  color: #82ddff;
+  font-size: 1.3rem;
+  text-align: center;
+  
+ }
+
+body {
+  background-color: #00094c;
+  }
+
+.ocean-row {
+  display: flex;
+  justify-content: center; /* keeps both boxes centered on the page */
+  gap: 2rem;               /* space between them */
+}
+
+.shark, .whale, .dolphin {
+  animation: pulse;
+  height: 410px;
+  width: 410px;
+  background-color: #82ddff;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px;
+  margin: 2rem;
+  padding: 1rem;
+  transform: scale(1);
+}
+
+
+.shark img {
+  transform: scale(.9);
+  animation: bounce 1.8s ease-in-out infinite;
+  }
+
+
+
+.whale img {
+  transform: scale(.8);
+  animation: bounce 1.8s ease-in-out infinite;
+  }
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+
+
+.dolphin img {
+  transform: scale(.7);
+  animation: bounce 1.8s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+h4 {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+
+button {
+    background-color: #82ddff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+
+    position: fixed;   /* no reflow */
+    left: 50%;         /* no reflow */
+    bottom: -10px;         /* no reflow */
+    transform: translateX(0%); /* no reflow */
+}
+
+button:hover {
+  transform: scale(1.1);
+  animation: pulse 2s ease infinite alternate;
+}
+ 
+@keyframes pulse {
+  from { background-color: #82ddff; }
+  to { background-color: #19c6ff; }
+}
