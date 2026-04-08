@@ -22,7 +22,7 @@ body {
 }
 
 .shark, .whale, .dolphin {
-  animation: pulse;
+  animation: pulse 2s ease-in-out infinite alternate;
   height: 410px;
   width: 410px;
   background-color: #82ddff;
@@ -61,12 +61,6 @@ body {
 }
 
 
-
-
-
-
-
-
 h4 {
   text-align: center;
   font-size: 1.1rem;
@@ -83,11 +77,11 @@ button {
     position: fixed;   /* no reflow */
     left: 50%;         /* no reflow */
     bottom: -10px;         /* no reflow */
-    transform: translateX(0%); /* no reflow */
+    transform: translateX(-50%); /* no reflow */
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: translateX(-50%) scale(1.1);
   animation: pulse 2s ease infinite alternate;
 }
  
